@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shop_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_gravity="top"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top_waves" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_gravity="bottom"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_bottom_waves" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="26dp"
+            android:paddingEnd="26dp"
+            android:paddingTop="75dp"
+            android:paddingBottom="72dp">
+
+            <FrameLayout
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:background="@drawable/bg_shop_logo"
+                android:elevation="8dp">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Bolsa de compras de SebasShop"
+                    android:src="@drawable/ic_bag_white" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sebas"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/shop_brown" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/shop_orange" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TU TIENDA ONLINE"
+                android:letterSpacing="0.18"
+                android:textSize="12sp"
+                android:textColor="@color/shop_muted" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:gravity="center"
+                android:text="¡Bienvenido de nuevo!"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/shop_brown" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:text="Inicia sesión para descubrir tus productos favoritos."
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/shop_muted" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutCorreo"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:hint="Correo electrónico"
+                app:boxBackgroundColor="@color/shop_field"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/shop_orange"
+                app:startIconDrawable="@drawable/ic_mail"
+                app:startIconTint="@color/shop_muted">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:autofillHints="emailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/shop_brown" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutPassword"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Contraseña"
+                app:boxBackgroundColor="@color/shop_field"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/shop_orange"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/shop_muted"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/shop_muted">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:autofillHints="password"
+                    android:singleLine="true"
+                    android:textColor="@color/shop_brown" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEntrar"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="30dp"
+                android:text="INICIAR SESIÓN"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/shop_on_orange"
+                app:backgroundTint="@color/shop_orange"
+                app:cornerRadius="26dp" />
+
+            <TextView
+                android:id="@+id/tvCrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="¿No tienes cuenta?  Regístrate"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/shop_orange"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="COMODIDAD  ·  ESTILO  ·  COMPRA FÁCIL"
+                android:textSize="11sp"
+                android:letterSpacing="0.04"
+                android:textColor="@color/shop_muted" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

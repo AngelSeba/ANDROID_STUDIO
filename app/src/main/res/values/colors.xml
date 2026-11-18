@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shop_orange">#F56206</color>
+    <color name="shop_orange_dark">#D84B00</color>
+    <color name="shop_yellow">#FFB82E</color>
+    <color name="shop_bg">#FFF9F5</color>
+    <color name="shop_surface">#FFFDFB</color>
+    <color name="shop_field">#FDEBE0</color>
+    <color name="shop_brown">#452319</color>
+    <color name="shop_muted">#896D62</color>
+    <color name="shop_white">#FFFFFF</color>
+    <color name="shop_on_orange">#FFFFFF</color>
+    <color name="shop_wave_strong">#FF8717</color>
+    <color name="shop_wave_mid">#FFB95F</color>
+    <color name="shop_wave_pale">#FFE2C8</color>
+</resources>

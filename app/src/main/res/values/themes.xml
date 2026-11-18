@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SebasShop" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/shop_orange</item>
+        <item name="colorOnPrimary">@color/shop_on_orange</item>
+        <item name="colorSecondary">@color/shop_yellow</item>
+        <item name="colorSurface">@color/shop_surface</item>
+        <item name="colorOnSurface">@color/shop_brown</item>
+        <item name="android:windowBackground">@color/shop_bg</item>
+        <item name="android:statusBarColor">@color/shop_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/shop_bg</item>
+    </style>
+</resources>
